@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo "Build started"
+      - echo "No code yet, just testing pipeline"
+artifacts:
+  files:
+    - README.md
