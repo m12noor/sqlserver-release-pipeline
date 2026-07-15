@@ -1,9 +1,17 @@
 version: 0.2
+
 phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
   build:
     commands:
-      - echo "Build started"
-      - echo "No code yet, just testing pipeline"
+      - echo "Running build..."
+      - ls
+      - echo "Hello World"
+  post_build:
+    commands:
+      - echo "Build completed successfully!"
 artifacts:
   files:
-    - README.md
+    - '**/*'
